@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .web {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+
+        } */
+
+        .outer {
+            display: grid;
+            gap: 50px;
+            grid-template-rows: repeat(12, 1fr);
+            grid-template-columns: repeat(12, 1fr);
+            /* height: 700px;   */
+            /* min-width: 800px; */
+        }
+
+        .inner1 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 6;
+
+            /* background-color: #69ff7a; */
+        }
+
+        .inner3 {
+            grid-row-start: 2;
+            grid-column-start: 6;
+            grid-column-end: 12;
+        }
+
+        .inner2 {
+            grid-column-start: 6;
+            grid-column-end: 8;
+        }
+
+        .inner4 {
+            grid-row-start: 1;
+            grid-column-end: 12;
+            grid-column-start: 8;
+            /* For text */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .inner {
+            border: 1px solid #ffffff;
+            text-align: center;
+            border-radius: 18px;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 1px 0px 8px #959595;
+        }
+
+        img {
+            height: 180px;
+            width: 180px;
+        }
+
+        .annon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .annon img {
+            height: 50px;
+            width: 50px;
+            opacity: 50%;
+            margin: 12px;
+        }
+
+        @media only screen and (max-width: 1366px) {
+            
+            .outer {
+                
+                display: flex;
+                flex-direction: column;
+                margin: 12px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="web">
+        <div class="outer">
+            <div class="inner inner1">
+                
+            </div>
+            <div class="inner inner2">
+                <img src="https://thumbs.dreamstime.com/b/demo-red-rubber-stamp-over-white-background-88003515.jpg" alt="">
+                <p>Supporting text...</p>
+            </div>
+            <div class="inner inner3">
+                <img src="https://cdn3d.iconscout.com/3d/premium/thumb/rainy-weather-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--day-rain-raining-pack-illustrations-3337336@0.png"
+                    alt="" srcset="">
+                <h2>Navalur</h2>
+                <h4>32 *C</h4>
+                <h4>Scatter clouds</h4>
+            </div>
+            <div class="inner inner4">
+                <div class="annon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFP9bnyAWAvaP_G9nhTz_sAyjSMnB9hSMDeA&s"
+                        alt="" srcset="">
+                    <h2>Internal Announcement</h2>
+                </div>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
